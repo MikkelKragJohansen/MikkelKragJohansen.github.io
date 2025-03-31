@@ -6,19 +6,25 @@
     <title>My GitHub Website</title>
 </head>
 <body>
-    <h1>Welcome to My Website for assignment 2 in 02806</h1>
-    <p>Assignment 2 s215736, 31-03-2025.</p>
+    <h1>Assignment 2, 02806 - Social Data Analysis and Visualization Spring 2025</h1>
+    <p>Group 50, s215736, 31-03-2025.</p>
 
     <p>San Francisco has long grappled with drug and narcotic-related issues, shaped by shifting political approaches over the years. In the early 2000s, policies leaned toward strict enforcement, with a focus on cracking down on drug-related offenses. However, in recent years, there has been a shift toward harm reduction strategies, including safe consumption sites and expanded rehabilitation programs. Despite these efforts, the city continues to face challenges with open-air drug use, fentanyl-related overdoses, and ongoing debates about the balance between public safety and public health.</p>
 
     <p>This project analyzes drug- and narcotics-related crimes in San Francisco, using various data visualizations to highlight key aspects of the police reports from 2003-2024.</p>
 
-    <h2>Heatmap of Drug/Narcotic Related Crimes</h2>
-    <iframe src="drug_narcotic_heatmap.html" width="60%" height="600px" style="border:none;"></iframe>
+    <p>The data comes from DataSF, and consists of reported drug- and narcotics-related crimes by the police in all of San Francisco. The data is collected between 2003 and 2025, where the entire dataset is being presented in the folowing visualizations on the website.</p>
 
-    <p>The map shows all the detected drug/narcotic related crimes detected in San Francisco.</p>
+    <h2>Heatmap of reported Drug- and Narcotics-Related Crimes in San Francisco from 2003-2025</h2>
+    <iframe src="drug_narcotic_heatmap.html" width="80%" height="600px" style="border:none;"></iframe>
 
-    <h2>bokeh plot of drug/narcotic related crimes</h2>
+    <p>The heatmap illustrates all detected drug- and narcotics-related crimes in San Francisco, where darker color intensity signifies a higher concentration of incidents. The data reveals that such crimes occur throughout the city, though certain areas, such as Mount Sutro, the Presidio of San Francisco, and Lincoln Park, show little to no recorded incidents.
+
+        This lack of reported crime in these areas could be due to their low population density, and the fact, that these locations consist largely of parks and residential neighborhoods, which naturally deter drug activity compared to more urbanized regions.
+        
+        Notably, the eastern part of San Francisco (especially the northeastern districts) experiences a significantly higher volume of drug-related crimes compared to the rest of the city. This is likely influenced by factors such as higher population density, economic disparity, and the presence of established drug markets, particularly in neighborhoods like the Tenderloin and SoMa. </p>
+
+    <h2>Distribution of Reported Crimes Compared Between Districts</h2>
     <iframe src="bokeh_plot.html" width="100%" height="600px" style="border:none;"></iframe>
     <p>The data clearly shows that the majority of drug- and narcotics-related crimes in San Francisco occur in the Tenderloin district—an area known for its high levels of poverty, crime, and homelessness, as well as its ongoing struggle with drug sales and usage.
 
@@ -30,7 +36,20 @@
     
     <p>In general all of San Francisco is affected by drug- and narcotics-related crimes, and it therefore important to note that while certain neighborhoods like the Tenderloin, Southern, and Mission have higher concentrations of drug-related incidents, San Francisco's drug crisis affects multiple areas across the city. Efforts to address these challenges include harm reduction strategies, increased law enforcement, and community-based initiatives</p>
 
-    <h2>Barplot of hourly distribution of drug- and narcotics-related crimes in San Francisco</h2>
-    <iframe src="hourly_crime_distribution1.html" width="60%" height="600px" style="border:none;"></iframe>
+    <h2>Hourly Distribution of Drug- and Narcotics-Related Crimes in San Francisco</h2>
+    <iframe src="hourly_crime_distribution1.html" width="70%" height="600px" style="border:none;"></iframe>
+
+    <p>The bar plot illustrates the hourly distribution of drug- and narcotics-related crimes reported in San Francisco between 2003 and 2025. Each bar represents the relative frequency of incidents occurring at a given hour of the day.
+
+        The data reveals that most drug-related crimes are reported in the afternoon and evening, with notably fewer incidents recorded in the early morning hours between 3 AM and 7 AM.
+        
+        This trend is likely influenced by human activity patterns, where drug transactions and usage often coincide with busier periods in the city, when more people are out in public, commuting, socializing, or engaging in nightlife activities which makes the afternoon and evening peak hours for such incidents. Conversely, the early morning hours see lower overall activity, with fewer people on the streets and increased police presence, potentially deterring illicit activity.
+    </p>
+
+    <p>San Francisco's drug crisis is a persistent and complex issue, that has been evolving over the years with shifting policies and new challenges. The data highlights how drug-related crimes are not confined to a single area but rather impact multiple neighborhoods across the city, with the Tenderloin, Southern, and Mission districts experiencing the highest concentrations.
+
+        Temporal patterns reveal that drug-related crimes are most frequently reported in the afternoon and evening, aligning with increased urban activity, while the early morning hours see significantly fewer incidents—likely due to reduced street presence and stronger law enforcement during those times.
+        
+        While harm reduction strategies, law enforcement, and community initiatives continue to shape San Francisco’s response, the balance between public health and public safety remains a pressing debate. Addressing the city's drug crisis will probably remain a political topic, until a feasable solution has been found to the war on drugs.</p>
 </body>
 </html>
