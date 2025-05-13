@@ -9,34 +9,61 @@
     <h1>Project Assigment B, 02806 - Social Data Analysis and Visualization Spring 2025</h1>
     <p>Group 50, s215736, 13-05-2025.</p>
 
-    <p>San Francisco has long grappled with drug and narcotic-related issues, shaped by shifting political approaches over the years. In the early 2000s, policies leaned toward strict enforcement, with a focus on cracking down on drug-related offenses. However, in recent years, there has been a shift toward harm reduction strategies, including safe consumption sites and expanded rehabilitation programs. Despite these efforts, the city continues to face challenges with open-air drug use, fentanyl-related overdoses, and ongoing debates about the balance between public safety and public health.</p>
-
-    <p>This project analyzes drug- and narcotics-related crimes in San Francisco, using various data visualizations to highlight key aspects of the police reports from 2003-2024.</p>
-
-    <p>The data comes from DataSF, and consists of reported drug- and narcotics-related crimes by the police in all of San Francisco. The data is collected between 2003 and 2025, where the entire dataset is being presented in the folowing visualizations on the website.</p>
-
-    <h2>What is your dataset?</h2>
-
-    <p>The dataset used in this study is the Automated Traffic Volume Counts from NYC Open Data, covering traffic counts from 2018 to 2024. It provides granular insights into traffic flow at the quarter-level, capturing vehicle counts on selected roads in NYC. The dataset includes timestamps, road names, and directional traffic counts (northbound, eastbound, westbound, and southbound).</p>
     
-    <h2>Why did you choose this dataset?</h2>
+    <h2>Analyzing Driving Patterns in New York City</h2>
 
-
-    <h2>What was your goal for the end user's experience?</h2>
-
-    <h2>visualizations</h2>
     <iframe src="traffic_weekdays.html" width="50%" height="500px" style="border:none;"></iframe>
+
+    <p>Plottet viser den gennemsnitlige trafik pr. kvarter på de syv ugedag, ud fra trafiktællingerne.
+        Ud fra barplottet ses en tydelig tendens, hvor den største gennemsnitlige trafik pr. kvarter ud fra trafiktællingerne i NYC ligger på tirsdage, onsdage og torsdag.
+        Hvor fredag og lørdage oplever omkring 10% lavere og søndag op mod 25% lavere, hvor mandag ligger 18% lavere end de midterste ugedage. Den større forskydning i,
+        mængden af kørsel på tværs af almindelige hverdage kan skyldes, at folk arbejder hjemmefra mandag eller fredag, eller nogle måske endda holder fri på disse dage for
+        at forlænge weekenden. Den lavere trafik om søndag skyldes højest sandsynligt at søndag for mange er en heligdag, og at folk bliver hjemme og slapper af.
+        Den højere trafik om lørdagen end om søndagen kan skyldes, at folk er til arrangementer, eller bruger deres fridag på at opnå forskellige gøremål.
+    </p>
 
     <iframe src="gennemsnitlig_trafik_bydele.html" width="50%" height="500px" style="border:none;"></iframe>
 
+    <p>Graferne på plottet viser den gennemsnitlige trafik på vejene, hvor der er foretaget automatiske trafiktællinger pr. kvarter fordelt på de forskellige bydele i NYC.
+        Grafernes forløb følges generelt meget ad i løbet af dagen, hvor morgenmyldretiden ligger mellem kl. 7-9 hvor trafikken peaker om morgenen, og graferne har en lille pukkel.
+        Derefter opleves generelt et mindre fald, hvorefter trafikken stiger mod eftermiddagsmyldretiden, hvor den falder mellem kl. 15-17, og efterfølgende falder igen.
+        Tendensen hvor trafikken kun falder en smule efter morgenmyldretiden, og derefter igen stiger drastisk mod eftermiddagsmyldretiden, peger på, at trafikken i NYC er intens
+        og kapacitet på vejene er fyldt op. Derudover ses en tendens i bydelen Staten Island, hvor trafikken falder drastisk efter eftermiddagsmyldretiden, i forhold til de
+        andre bydele. Dette kan skyldes dens geografiske placering, som er mere suburban og residential. Dette kan betyde, at når pendlere er kommet hjem fra arbejde,
+        er der ikke så meget trafik, der opretholdes i denne bydel. Mange beboere i Staten Island pendler måske også til andre bydele for at arbejde, hvor de generere en
+        masse trafik når de skal til og fra arbejde, men genererer dermed ikke så meget trafik, når arbejdsdagen er overstået.
+    </p>
+
     <iframe src="gennemsnitlig_trafik_ugedage.html" width="50%" height="500px" style="border:none;"></iframe>
+
+    <p>På plottet ses grafer for de forskellige bydele i NYC, der viser den gennemsnitlige trafik pr. kvarter i løbet af 24 timer fordelt på de forskellige ugedage.
+        Grafere viser en lignende tendens som det forrige plot, hvor myldretiderne i hverdagene falder mellem kl. 7-9 og kl. 15-17. Der ses en tydelig forskel i hvordan
+        trafikken falder i løbet af dagen på hverdager og weekender. I weekenden falder myldretiden mere midt på dagen, hvor der ikke er nogen decideret morgen- og eftermiddagsmyldretid.
+        Dette skyldes den generelle pendler kultur, hvor man i hverdagene møder ind på arbejde om morgenen, og forlader sit arbejde om eftermiddagen. Dette skaber store mængder
+        trafik i disse perioder, og danner derfor morgen og eftermiddagsmyldretrafik. Dette skyldes altså, at folk på bagrund af systemer, er mere tilbøjelige til at pendle netop
+        i myldretiderne, hvor trafikken opnår sit højeste. I weekenden er dette helt anderledes, da folk ikke har noget incitement til at pendle på fast bestemte tidspunkter.
+        I weekenderne har folk ofte meget forskellige planer, og dermed forskellige behov for at pendle. Derudover, er der ofte ikke faste tidspunkter for, hvornår folk skal opnå
+        deres gøremål i weekenden. Derfor falder myldretiden ofte midt på dagen, til hen om eftermiddagen, hvor folk måske har kunnet slappe af, og nyde deres fridage, inden
+        de skal opnå dagens gøremål.
+    </p>
+
+    <iframe src="trafic_map.html" width="80%" height="700px" style="border:none;"></iframe>
+
+    <p>Kortet viser den gennemsnitige trafik pr. kvarter, plottet på NYC's vejnetværk ud fra trafiktællingerne.
+        Trafikken for vejene er gennemsnitlige pr. kvarter, og viser derfor et gennemsnit af vejens samlede trafik pr. kvarter, ud fra trafiktællinger.
+        De røde og orange farver indikerer en højere mængde af trafik, hvor gullige farver indikerer mindre trafik. Et udvalg af de mest trafikerede veje på kortet er
+        representeret i graferne nedenfor.
+    </p>
 
     <iframe src="Selected_roads.html" width="70%" height="700px" style="border:none;"></iframe>
 
-    <iframe src="trafic_map.html" width="80%" height="700px" style="border:none;"></iframe>
-    
-    <h2>Hourly Distribution of Drug- and Narcotics-Related Crimes in San Francisco</h2>
-    <iframe src="hourly_crime_distribution1.html" width="70%" height="600px" style="border:none;"></iframe>
+    <p>De ni plots viser den retningsbestemte trafik pr. kvarter i lkøbet af 24 timer, fordelt på ni forskellige udvalgte store fordelingsveje i NYC.
+        Graferne viser ligesom før nogle af de samme tendenser om, hvornår myldretiderne og den største trafik falder. Dog sker der noget på nogle af vejene, hvor
+        trafikkens høje niveau opretholdes i løbet af hele dagen i alle retninger. Dette ses fx på Long Island Expressway, hvor trafikken i øst og vestgående retning
+        er stabil i løbet taf næsten hele dagen, og ikke er defineret af tydelige myldretider. Dette ses tildels også på Belt Parkway, which runs on the south of Brooklyn,
+        hvor østlig, vestlig og sydlig trafik har nogenlunde samme mængde i løbet af hele dagen. Der ses næsten ingen nordgående trafik i forhold til...
+    </p>
+
 
 
 </body>
