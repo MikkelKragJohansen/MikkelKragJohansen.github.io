@@ -3,76 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>NYC Traffic Analysis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Project Assigment B, 02806 - Social Data Analysis and Visualization Spring 2025</h1>
-    <p>Group 50, s215736, 13-05-2025.</p>
+    <header>
+        <h1>NYC Traffic Analysis</h1>
+        <p class="subtitle">Traffic Patterns & Insights based on Automated Traffic Volume Counts</p>
+        <p>Group 50, s215736, 13-05-2025.</p>
+    </header>
 
-    
-    <h2>Analyzing Driving Patterns in New York City</h2>
+    <main class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>This report analyzes traffic patterns in New York City (NYC) based on automated traffic counts. Various visualizations illustrate how traffic volume fluctuates
+            across weekdays, times of day, and boroughs. The aim is to identify general trends, peak congestion periods, and unique characteristics of specific areas and
+            roads within NYC. Factors such as commuting habits, urban layout, and day-of-week effects are considered to explain these patterns.</p>
+        </section>
 
-    <p>This report analyzes traffic patterns in New York City (NYC) based on automated traffic counts. Various visualizations illustrate how traffic volume fluctuates
-         across weekdays, times of day, and boroughs. The aim is to identify general trends, peak congestion periods, and unique characteristics of specific areas and
-         roads within NYC. Factors such as commuting habits, urban layout, and day-of-week effects are considered to explain these patterns.</p>
+        <section>
+           <iframe src="traffic_weekdays.html" width="50%" height="500px" style="border:none;"></iframe> 
 
-    <iframe src="traffic_weekdays.html" width="50%" height="500px" style="border:none;"></iframe>
-
-    <p>The first plot shows the average traffic per 15-minute interval across the seven weekdays, based on traffic counts. A clear trend emerges: the highest average
-         traffic is observed on Tuesdays, Wednesdays, and Thursdays. In contrast, Fridays and Saturdays experience approximately 10% lower traffic, while Sundays see
-          up to 25% less traffic. Mondays also exhibit an 18% decrease compared to mid-weekdays. This variation in weekday traffic can be attributed to flexible work
-           arrangements, where people may work from home on Mondays or Fridays, or even take these days off to extend their weekends. The significant drop in Sunday
+           <p>The first plot shows the average traffic per 15-minute interval across the seven weekdays, based on traffic counts. A clear trend emerges: the highest average
+            traffic is observed on Tuesdays, Wednesdays, and Thursdays. In contrast, Fridays and Saturdays experience approximately 10% lower traffic, while Sundays see
+            up to 25% less traffic. Mondays also exhibit an 18% decrease compared to mid-weekdays. This variation in weekday traffic can be attributed to flexible work
+            arrangements, where people may work from home on Mondays or Fridays, or even take these days off to extend their weekends. The significant drop in Sunday
             traffic is likely due to cultural factors, as Sundays are commonly reserved for rest and relaxation. The slightly higher traffic on Saturdays compared to
-             Sundays may be explained by people attending events or running errands on their day off.
-    </p>
+            Sundays may be explained by people attending events or running errands on their day off.</p>
+        </section>
 
-    <iframe src="gennemsnitlig_trafik_bydele.html" width="50%" height="500px" style="border:none;"></iframe>
+        <section>
+            <iframe src="gennemsnitlig_trafik_bydele.html" width="50%" height="500px" style="border:none;"></iframe>
 
-    <p>Subsequent plots display the average traffic volume per 15-minute interval throughout the day, segmented by NYC boroughs. These graphs generally follow a similar
-         daily pattern, with morning rush hour peaking between 7-9 AM, followed by a slight decline. Traffic then builds up again towards the afternoon rush hour, with
-          a noticeable peak between 3-5 PM before declining steadily into the evening. This persistent congestion throughout the day indicates that NYC's road capacity
-           is often saturated. Notably, Staten Island shows a distinct pattern, where traffic drops sharply after the afternoon rush hour compared to other boroughs.
+            <p>Subsequent plots display the average traffic volume per 15-minute interval throughout the day, segmented by NYC boroughs. These graphs generally follow a similar
+            daily pattern, with morning rush hour peaking between 7-9 AM, followed by a slight decline. Traffic then builds up again towards the afternoon rush hour, with
+            a noticeable peak between 3-5 PM before declining steadily into the evening. This persistent congestion throughout the day indicates that NYC's road capacity
+            is often saturated. Notably, Staten Island shows a distinct pattern, where traffic drops sharply after the afternoon rush hour compared to other boroughs.
             This can be attributed to Staten Island's suburban and residential nature. Many residents likely commute to other boroughs for work, generating significant
-             traffic during peak hours, but once commuters return home, local traffic diminishes considerably.
-    </p>
+            traffic during peak hours, but once commuters return home, local traffic diminishes considerably.</p>
+        </section>
 
-    <iframe src="gennemsnitlig_trafik_ugedage.html" width="50%" height="500px" style="border:none;"></iframe>
+        <section>
+            <iframe src="gennemsnitlig_trafik_ugedage.html" width="50%" height="500px" style="border:none;"></iframe>
 
-    <p>Another set of plots illustrates the average traffic per 15-minute interval over 24 hours, differentiated by weekday and weekend. These graphs reflect similar
-         rush hour patterns seen earlier, with peaks between 7-9 AM and 3-5 PM on weekdays. However, there is a marked difference in how traffic evolves during weekends.
-          Unlike weekdays, weekends lack distinct morning and afternoon rush hours. Instead, traffic tends to peak around midday and into the afternoon. This difference
-           stems from typical commuting behavior: on weekdays, structured work schedules dictate when people travel, leading to concentrated traffic during specific
+            <p>Another set of plots illustrates the average traffic per 15-minute interval over 24 hours, differentiated by weekday and weekend. These graphs reflect similar
+            rush hour patterns seen earlier, with peaks between 7-9 AM and 3-5 PM on weekdays. However, there is a marked difference in how traffic evolves during weekends.
+            Unlike weekdays, weekends lack distinct morning and afternoon rush hours. Instead, traffic tends to peak around midday and into the afternoon. This difference
+            stems from typical commuting behavior: on weekdays, structured work schedules dictate when people travel, leading to concentrated traffic during specific
             periods. In contrast, weekends offer greater flexibility, with people following diverse plans and no strict time constraints. Consequently, weekend traffic
-             is more evenly distributed throughout the day, with a moderate peak later in the morning or early afternoon
-    </p>
+            is more evenly distributed throughout the day, with a moderate peak later in the morning or early afternoon</p>
+        </section>
 
-    <iframe src="trafic_map.html" width="80%" height="700px" style="border:none;"></iframe>
+        <section>
+            <iframe src="trafic_map.html" width="80%" height="700px" style="border:none;"></iframe>
 
-    <p>A traffic heat map visualizes the average volume per 15-minute interval across NYC's road network. The map uses red and orange hues to indicate high traffic
-         intensity, while yellow shades represent lighter traffic. The visualization highlights key heavily trafficked roads, which are further analyzed in detailed
-          directional traffic plots below.
-    </p>
+            <p>A traffic heat map visualizes the average volume per 15-minute interval across NYC's road network. The map uses red and orange hues to indicate high traffic
+            intensity, while yellow shades represent lighter traffic. The visualization highlights key heavily trafficked roads, which are further analyzed in detailed
+            directional traffic plots below.</p>
+        </section>
 
-    <iframe src="Selected_roads.html" width="70%" height="700px" style="border:none;"></iframe>
+        <section>
+            <iframe src="Selected_roads.html" width="70%" height="700px" style="border:none;"></iframe>
 
-    <p>The final set of nine plots presents directional traffic volumes per 15-minute interval over 24 hours, focusing on nine major arterial roads in NYC. As in
-         previous plots, typical rush hour patterns are visible. However, certain roads maintain high traffic levels throughout the entire day in both directions.
-          For instance, the Long Island Expressway shows stable traffic flow eastbound and westbound, without pronounced rush hour peaks. A similar pattern is observed
-           on the Belt Parkway, which runs along the southern edge of Brooklyn. Here, traffic volumes remain relatively constant in all directions, except for a notably
+            <p>The final set of nine plots presents directional traffic volumes per 15-minute interval over 24 hours, focusing on nine major arterial roads in NYC. As in
+            previous plots, typical rush hour patterns are visible. However, certain roads maintain high traffic levels throughout the entire day in both directions.
+            For instance, the Long Island Expressway shows stable traffic flow eastbound and westbound, without pronounced rush hour peaks. A similar pattern is observed
+            on the Belt Parkway, which runs along the southern edge of Brooklyn. Here, traffic volumes remain relatively constant in all directions, except for a notably
             lower volume of northbound traffic—likely due to either limited data or a general lack of northbound commuting via this route. Other roads exhibit more
-             distinct rush hour patterns. The Bronx River Parkway, for example, has clearly defined morning and afternoon peaks in the northbound direction, with a
-              slightly less pronounced but still visible pattern southbound. The Cross Bronx Expressway shows strong rush hour peaks westbound, while eastbound traffic
-               remains consistently high throughout the day. On the Grand Central Parkway, traffic volumes are elevated across all directions for most of the day, with
-                minor fluctuations. Its route—connecting the eastern edge of Manhattan through Queens towards Brooklyn—explains this constant high traffic flow. A similar
-                 but slightly less intense pattern is seen on the Brooklyn-Queens Expressway
-    </p>
+            distinct rush hour patterns. The Bronx River Parkway, for example, has clearly defined morning and afternoon peaks in the northbound direction, with a
+            slightly less pronounced but still visible pattern southbound. The Cross Bronx Expressway shows strong rush hour peaks westbound, while eastbound traffic
+            remains consistently high throughout the day. On the Grand Central Parkway, traffic volumes are elevated across all directions for most of the day, with
+            minor fluctuations. Its route—connecting the eastern edge of Manhattan through Queens towards Brooklyn—explains this constant high traffic flow. A similar
+            but slightly less intense pattern is seen on the Brooklyn-Queens Expressway</p>
+        </section>
 
-    <p>The analysis of NYC traffic data reveals clear patterns shaped by commuting behavior, urban infrastructure, and social habits. Weekdays see predictable rush hour
-         peaks, especially mid-week, while Mondays and Fridays experience reduced traffic, likely due to flexible work arrangements. Weekends differ significantly, with
-          more evenly spread traffic volumes. Staten Island's distinct post-peak decline highlights suburban commuting dynamics, while key arterial roads like the Long
-           Island Expressway and Grand Central Parkway sustain heavy traffic all day, reflecting their strategic importance. These insights underscore the complexity of
-            urban traffic management in a dense and dynamic city like NYC, where both temporal and spatial factors influence congestion patterns
-    </p>
-
+        <section>
+            <h2>Conclusion</h2>
+            <p>The analysis of NYC traffic data reveals clear patterns shaped by commuting behavior, urban infrastructure, and social habits. Weekdays see predictable rush hour
+            peaks, especially mid-week, while Mondays and Fridays experience reduced traffic, likely due to flexible work arrangements. Weekends differ significantly, with
+            more evenly spread traffic volumes. Staten Island's distinct post-peak decline highlights suburban commuting dynamics, while key arterial roads like the Long
+            Island Expressway and Grand Central Parkway sustain heavy traffic all day, reflecting their strategic importance. These insights underscore the complexity of
+            urban traffic management in a dense and dynamic city like NYC, where both temporal and spatial factors influence congestion patterns</p>
+        </section>
+    </main>
 </body>
 </html>
